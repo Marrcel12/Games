@@ -1,0 +1,125 @@
+*{
+    font-size: 32px;
+    color: black;
+    text-align: center;
+}
+img{
+     height: 100px;
+    width: 100%;
+}
+#plansza
+{
+    background-color: bisque;
+    height: 460px;
+    width: 330px;
+    text-align: center;
+    background-position: center;
+    font-style: italic;
+}
+#a
+{
+    margin-left: 12px;
+    margin-top: 12px;
+    height: 100px;
+    width: 100px;
+    background-color: white;
+    float: left;
+    text-decoration-color: 
+    }
+#b
+{
+    height: 100px;
+    margin-top: 12px;
+    width: 100px;
+    background-color: white;
+    float: left;
+    border-right-style: solid;
+    border-left-style: solid;
+    }
+#c
+{
+    height: 100px;
+    width: 100px;
+    background-color: white;
+    float: left;
+    margin-right: 10px;
+    margin-top: 12px;
+}
+#d
+{
+    margin-left: 12px;
+    height: 100px;
+    width: 100px;
+    border-top-style: solid;
+    background-color: white;
+    clear: both; 
+    float: left;
+}
+#e
+{
+    height: 100px;
+    width: 100px;
+    border-top-style: solid;
+    border-left-style: solid;
+    border-right-style: solid;
+    background-color: white;
+    float: left;
+    }
+
+#f
+{
+    height: 100px;
+    width: 100px;
+    background-color: white;
+    border-top-style: solid;
+    float: left;
+    margin-right: 10px;
+    }
+#g
+{
+    margin-left: 12px;
+    height: 100px;
+    width: 100px;
+    background-color: white;
+    border-top-style: solid;
+    clear: both;
+    float: left;
+    margin-bottom: 12px;
+    }
+#h
+{
+    height: 100px;
+    width: 100px;
+    background-color: white;
+    border-top-style: solid;
+    border-left-style: solid;
+    border-right-style: solid;
+    float: left;
+    margin-bottom: 12px;
+   
+    }
+#i
+{
+    border-top-style: solid;
+    height: 100px;
+    width: 100px;
+    background-color: white;
+    float: left;
+    margin-right: 10px;
+    margin-bottom: 12px;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
