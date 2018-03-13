@@ -1,12 +1,41 @@
-body{
+* {
+    box-sizing: border-box;
+}
+
+body {
     margin: 0;
     padding: 0;
- display:flex;
+    display: flex;
     align-items: center;
     justify-content: center;
     height: 100vh;
     background-color: darkgray;
 }
-canvas{
-   border: 3px solid #fff;
+
+canvas {
+    border: 3px solid #fff;
 }
+
+#pnkt {
+    margin-top: 1%;
+    padding: 2%;
+    font-size: 96px;
+    position: absolute;
+    top: 0;
+
+
+}
+.heartbox{
+    position: absolute;
+   bottom: 10%;
+    
+}
+.heart{
+    width: 50px;
+    color: red;
+    font-size: 190%;
+    display: inline-block;
+    padding: 5%;
+    
+}
+

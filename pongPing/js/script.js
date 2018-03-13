@@ -36,8 +36,43 @@ let aiY = 200;
 //predkosc piłiki
 let ballspeedX = 2;
 let ballspeedY = 3;
+//licznik punktów i żyć
+
+
+let life = 2;
+let pnk = document.getElementById("pnkt").innerHTML;
 //funkcje
 //--------------------------------
+//dodawanie pnkt
+function pnkt() {
+    
+    pnk++
+    document.getElementById("pnkt").innerHTML = pnk;
+}
+//Życia
+function Youlost() {
+    if (life > 0) {
+        document.getElementsByClassName("heart")[life].style.color = 'white';
+        life--
+    } else {
+        for (var i = 0; i < 3; i++) {
+            document.getElementsByClassName("heart")[i].style.color = 'red';
+        }
+        alert("przegrałeś");
+        ballX = cw / 2 - ballsize / 2;
+        ballY = ch / 2 - ballsize / 2;
+        life = 2;
+        ballspeedX = 2
+        ballspeedY = 3
+        pnk=-1;
+        pnkt();
+        
+
+
+    }
+
+}
+
 //rysowanie paletek
 function player() {
     ctx.fillStyle = 'green';
@@ -66,6 +101,8 @@ function ball() {
     if (ballX <= 0 || ballX + ballsize >= cw) {
         ballspeedX = -ballspeedX
         speedUp()
+        Youlost()
+
     }
     //do analzy
     if (ballX <= playerX + paddelWidth &&
@@ -75,6 +112,8 @@ function ball() {
         ballspeedX *= -1;
         ballX = playerX + paddelWidth;
         speedUp();
+        pnkt();
+
     }
 
     if (ballX + ballsize >= aiX &&
@@ -84,6 +123,8 @@ function ball() {
         ballspeedX *= -1;
         ballX = aiX - ballsize;
         speedUp();
+        pnkt();
+
     }
 
 }
