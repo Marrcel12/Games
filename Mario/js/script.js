@@ -51,6 +51,9 @@ function wejscie(dane){
 function aktualizacje(dane){
     
 }
+    function render(dane){
+        Render.aktualizacja(dane);
+    }
 };
 
 window.onload=Silnik();
