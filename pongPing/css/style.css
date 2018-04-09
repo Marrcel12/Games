@@ -1,6 +1,6 @@
 * {
     box-sizing: border-box;
-    color: white;
+    
 }
 
 body {
@@ -18,17 +18,18 @@ canvas {
 }
 
 #pnkt {
-    margin-top: 1%;
-    padding: 2%;
-    font-size: 96px;
+    margin-top: 1vh;
+    padding: 2vh;
+    font-size: 12vh;
     position: absolute;
     top: 0;
+    color: ghostwhite;
 
 
 }
 .heartbox{
     position: absolute;
-   bottom: 10%;
+   bottom: 10vh;
     
 }
 .heart{

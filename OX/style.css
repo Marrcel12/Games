@@ -9,12 +9,14 @@ img{
 }
 #plansza
 {
+    position: absolute;
     background-color: bisque;
     height: 460px;
     width: 330px;
     text-align: center;
     background-position: center;
     font-style: italic;
+    left: 36%;
 }
 #a
 {

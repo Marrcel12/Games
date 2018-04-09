@@ -1,3 +1,4 @@
+<<<<<<< Updated upstream
 const canvas = document.querySelector('canvas');
 const ctx = canvas.getContext('2d');
 
@@ -62,3 +63,33 @@ function table() {
 
 
 
+=======
+//pobieranie canvas do zmiennnych 
+const canv = document.querySelector('canvas');
+const ctx = canv.getContext('2d');
+//
+canv.height = 600;
+canv.width = 900;
+const ch = canv.height;
+const cw = canv.width;
+const pole = 80;
+
+
+
+function table() {
+    ctx.fillRect(0, 0, cw, ch);
+    ctx.fillStyle = 'red';
+}
+
+function drawPole() {
+    ctx.fillStyle = 'white';
+    for (let i = 0; i < 8; i++) {
+            
+        ctx.fillRect(10+(pole * i), 10 , pole, pole)
+    }
+}
+
+
+table();
+drawPole();
+>>>>>>> Stashed changes
