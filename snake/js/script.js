@@ -1,4 +1,4 @@
-<<<<<<< Updated upstream
+
 const canvas = document.querySelector('canvas');
 const ctx = canvas.getContext('2d');
 
@@ -10,8 +10,8 @@ const cw = canvas.width;
 
 
 
-let px = 0; //pozycja gracza
-let py = 0;
+let px = 10; //pozycja gracza
+let py = 10;
 
 let bx=2;
 let by=2;//wielkość kwadratu
@@ -27,8 +27,8 @@ function game(){
    table();
 }
 
-document.addEventListener("keydown", keyPush)
-//------------------------------
+document.addEventListener("keydown", keyPush);
+    
 
 function keyPush(event) {
     switch (event.keyCode) {
@@ -36,7 +36,7 @@ function keyPush(event) {
             xv = -1;
             yv = 0;
             break;
-        case 38: //strzałka w góre
+        case 40: //strzałka w góre
             xv = 0;
             yv = 1;
             break;
@@ -44,7 +44,7 @@ function keyPush(event) {
             xv = 1;
             yv = 1
             break;
-        case 40: //strzałka w dół
+        case 38: //strzałka w dół
             xv = 0;
             yv = -1;
             break;
@@ -63,33 +63,14 @@ function table() {
 
 
 
-=======
-//pobieranie canvas do zmiennnych 
-const canv = document.querySelector('canvas');
-const ctx = canv.getContext('2d');
-//
-canv.height = 600;
-canv.width = 900;
-const ch = canv.height;
-const cw = canv.width;
-const pole = 80;
 
 
 
-function table() {
-    ctx.fillRect(0, 0, cw, ch);
-    ctx.fillStyle = 'red';
-}
 
-function drawPole() {
-    ctx.fillStyle = 'white';
-    for (let i = 0; i < 8; i++) {
-            
-        ctx.fillRect(10+(pole * i), 10 , pole, pole)
-    }
-}
+
+
 
 
 table();
-drawPole();
->>>>>>> Stashed changes
+
+

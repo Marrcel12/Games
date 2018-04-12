@@ -50,7 +50,7 @@ var Wejscie = {
 				}
 			}
 		}
-		if(Wejscie.zadania.Nacisnieto(32)) {
+		if(Wejscie.zadania.Nacisnieto(38)) {
 			mario.obecnyStan = mario.stan.skakanie;
 		}
 	},

@@ -1,4 +1,4 @@
-<<<<<<< Updated upstream
+
 *{
     margin: 0;
     padding: 0;
@@ -10,15 +10,17 @@ body {
     height: 100vh;
     background-color: darkgray;
 }
+/*
 
 canvas{
     background-color: aqua;
 }
-=======
+*/
+
 canvas {
     position: absolute;
     transform:translate(50%,-50%);
     right: 50%;
     top: 50%;   
 }
->>>>>>> Stashed changes
+
